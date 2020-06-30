@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SfComboBoxTest.App">
+    <Application.Resources>
+        <!--#region COLORS-->
+        <Color x:Key="MainDarkBlueColor">#1D2242</Color>
+        <Color x:Key="MainBlueColor">#0080D7</Color>
+        <Color x:Key="AccentGreenColor">#83DDCD</Color>
+        <Color x:Key="AccentGreenColorAlpha50">#3283DDCD</Color>
+        <Color x:Key="AccentGreenColorSliderMax">#b3e3da</Color>
+        <Color x:Key="AccentGreenColorAlpha38">#2683DDCD</Color>
+        <Color x:Key="AccentGreenColor2">#008179</Color>
+
+        <Color x:Key="AccentLightGreenColor">#CAE4D1</Color>
+        <Color x:Key="AccentOrangeColor">#C38800</Color>
+        <Color x:Key="AccentRedColor">#B53C40</Color>
+
+        <Color x:Key="WhiteTextColor">#ECECEC</Color>
+
+        <Color x:Key="GrayTextColor">#6D6D72</Color>
+        <Color x:Key="GrayTextColor2">#D8D8D8</Color>
+        <Color x:Key="GrayTextColor3">#F3F1E9</Color>
+        <Color x:Key="GrayTextColor3Alpha10">#0AF3F1E9</Color>
+        <Color x:Key="GrayTextColor4">#676767</Color>
+        <Color x:Key="GrayTextColor5">#666666</Color>
+
+
+        <Color x:Key="DarkTextColor">#333333</Color>
+
+
+        <Color x:Key="BlueIconColor">#2D94DC</Color>
+        <Color x:Key="GrayBackgroundColor">#F5F5F5</Color>
+        <Color x:Key="GrayBackgroundColor2">#CCCCCC</Color>
+        <Color x:Key="GrayBackgroundColor3">#C4C4C4</Color>
+        <Color x:Key="GrayBackgroundColor4">#959595</Color>
+        <Color x:Key="GrayBackgroundColor5">#F8F8F8</Color>
+
+
+        <Color x:Key="CharcoalColor">#434343</Color>
+        <Color x:Key="AccentBlueColor">#00A5C6</Color>
+        <Color x:Key="SecondaryToolBarBackgroundColor">#212121</Color>
+
+        <Color x:Key="UnfocusedEntryColor">#75FFFFFF</Color>
+        <Color x:Key="EntryBackgroundColor">#0AFFFFFF</Color>
+    </Application.Resources>
+</Application>

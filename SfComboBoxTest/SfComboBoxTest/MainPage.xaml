@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             mc:Ignorable="d"
+             x:Class="SfComboBoxTest.MainPage"
+             BackgroundColor="{StaticResource MainDarkBlueColor}">
+
+    <StackLayout Padding="0,20,0,25" Spacing="20">
+        <combobox:SfComboBox 
+                HorizontalOptions="Center"
+                WidthRequest="145"
+                HeightRequest="45"
+                x:Name="comboBox"
+                BackgroundColor="{StaticResource GrayTextColor3Alpha10}"
+                ShowBorder="True"
+                BorderColor="{StaticResource GrayTextColor3}"
+                DropDownBackgroundColor="{StaticResource MainDarkBlueColor}"
+                TextColor="{StaticResource GrayTextColor3}"
+                DropDownTextColor="{StaticResource GrayTextColor3}"
+                SelectedDropDownItemColor="{StaticResource GrayTextColor3Alpha10}"
+                SelectedIndex="{Binding RoomLightStatusInt, Mode=TwoWay}"
+                SelectionChanged="comboBox_SelectionChanged">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>1920 x 1080</x:String>
+                    <x:String>1680 x 1050</x:String>
+                    <x:String>1600 x 900</x:String>
+                    <x:String>1440 x 900</x:String>                
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+
+        <ScrollView>
+            <StackLayout BindableLayout.ItemsSource="{Binding Dimmers}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+
+
+        <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" Spacing="20">
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
